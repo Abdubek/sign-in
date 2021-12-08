@@ -14,7 +14,7 @@ export const SignInForm = () => {
            placeholder="Enter e-mail"
            color={errors.email ? 'red' : null}
            aria-invalid={errors.email ? "true" : "false"}
-           {...register("email",  { pattern: emailPattern })}  />
+           {...register("email",  { pattern: emailPattern, required: true })}  />
     <Input label="Password"
            placeholder="Enter password"
            type="password"
