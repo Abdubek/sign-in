@@ -8,7 +8,6 @@ export const Input =  forwardRef(({ children, color, label, name, ...props }, re
   const classList = cc([
     'input__inner',
     { [`input__inner--${color}`]: color },
-    { 'input__inner--with-icon': children },
   ])
 
   const getEyeIcon = () => {

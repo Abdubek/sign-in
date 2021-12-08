@@ -6,7 +6,7 @@ import { emailPattern } from "../../utils/regex"
 export const SignInForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
-    console.log("data", data)
+    alert(JSON.stringify(data, null, 2));
   }
   return <form className='sign-in-form' onSubmit={handleSubmit(onSubmit)}>
     <h1>Welcome friend!</h1>
